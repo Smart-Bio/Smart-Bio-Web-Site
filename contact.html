@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - My Website</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Professional Website</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="logo.jpeg" alt="Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+<header>
+<img src="logo.jpeg" alt="Logo" class="logo">
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html" class="active">Contact</a>
+</nav>
+</header>
 
-  <section>
-    <h1>Contact Us</h1>
-    <form onsubmit="return handleSubmit(event)">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p id="form-message" style="color:green; display:none;">✅ Thank you! Your message has been sent.</p>
-  </section>
+<section class="hero">
+<div class="hero-content">
+<h1>Contact Us</h1>
+<p>We’d love to hear from you. Reach out with your questions or project ideas!</p>
+</div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 My Website. All rights reserved.</p>
-  </footer>
+<section class="services-preview">
+<h2>Get in Touch</h2>
+<form action="https://formspree.io/f/your-form-id" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
 
-  <button id="back-to-top" onclick="scrollToTop()">↑</button>
-  <script src="script.js"></script>
+<footer>
+<p>&copy; 2025 Professional Website | Designed with ❤️</p>
+</footer>
+
+<button id="back-to-top" onclick="scrollToTop()">↑</button>
+<script src="script.js"></script>
 </body>
 </html>

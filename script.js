@@ -1,15 +1,1 @@
-function handleSubmit(event) {
-  event.preventDefault();
-  document.getElementById("form-message").style.display = "block";
-}
-window.onscroll = function () {
-  const button = document.getElementById("back-to-top");
-  if (document.documentElement.scrollTop > 200) {
-    button.style.display = "block";
-  } else {
-    button.style.display = "none";
-  }
-};
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
+function handleSubmit(event){event.preventDefault();document.getElementById("form-message")&&(document.getElementById("form-message").style.display="block")}window.onscroll=function(){const t=document.getElementById("back-to-top");document.documentElement.scrollTop>200?t.style.display="block":t.style.display="none"};function scrollToTop(){window.scrollTo({top:0,behavior:"smooth"})}
